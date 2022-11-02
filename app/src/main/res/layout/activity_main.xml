@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="24dp">
+
+    <TextView
+        android:id="@+id/tv_pendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_naleng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_below="@id/tv_pendaftaran"
+        android:hint="Nama Lengkap"/>
+    <EditText
+        android:id="@+id/et_nopend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/et_naleng"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tv_infopen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nopend"
+        android:text="Informasi Pendaftaran Diri :"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15sp"
+        android:textSize="16sp" />
+    <CheckBox
+        android:id="@+id/cb_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:layout_below="@id/tv_infopen"/>
+
+    <CheckBox
+        android:id="@+id/cb_ig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:layout_below="@id/cb_fb"/>
+    <CheckBox
+        android:id="@+id/cb_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:layout_below="@id/cb_ig"/>
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/cb_web"
+        android:text="DAFTAR"/>
+</RelativeLayout>

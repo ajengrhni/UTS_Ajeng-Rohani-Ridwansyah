@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecActivity"
+    android:layout_margin="24dp">
+
+    <TextView
+        android:id="@+id/tv_konfri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KONFIRMASI PENDAFTARAN"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nama"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_konfri"
+        android:padding="10dp"
+        android:layout_marginTop="50sp"/>
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nama"
+        android:layout_marginTop="16dp"
+        android:text="nopen"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info Pendaftaran Dari :"
+        android:layout_below="@id/tv_no"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
